@@ -6,4 +6,4 @@ const longestSequenceOfZeros = (number) => {
     return arrayOfZeroes.sort().reverse()[0].length
 };
 
-longestSequenceOfZeros(4);
+console.log(longestSequenceOfZeros(4));
