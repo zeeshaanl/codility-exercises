@@ -1,3 +1,18 @@
+const isPrime = number => {
+    if (number === 1) {
+        return false;
+    }
+    let isPrime = true;
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    return isPrime;
+};
+
 const listFactors = number => {
     if (number === 0) {
         return 0
@@ -14,4 +29,9 @@ const listFactors = number => {
     return arrayOfFactors;
 };
 
-console.log(listFactors(57));
+const listPrimeFactors = number => {
+    const factors = listFactors(number);
+    return factors.filter(isPrime);
+};
+
+console.log(listPrimeFactors(512));
