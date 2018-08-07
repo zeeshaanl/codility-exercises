@@ -1,3 +1,3 @@
 # codility-exercises
 
-Math problems solved to develop algorithm skills and to learn to optimise time complexity
+Math problems solved to develop algorithm skills and to learn to optimise time complexity.
